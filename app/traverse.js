@@ -5,7 +5,7 @@ async function traverse(inputPath, editFile) {
     const items = fs.readdirSync(inputPath);
     for(let item in items) {
         // Construct the full path of the item
-    const fullPath = path.join(folderPath, item);
+    const fullPath = path.join(inputPath, item);
 
     // Check if the item is a file or a folder
     const isFile = fs.statSync(fullPath).isFile();
