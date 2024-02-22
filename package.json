@@ -1,10 +1,14 @@
 {
   "name": "logo-remover",
   "version": "1.0.0",
-  "description": "Program, that crops images.",
+  "description": "App that remove logo from images",
   "main": "index.js",
   "scripts": {
     "resize": "node index.js"
+  },
+  "repository": {
+    "url": "git@github.com:Romkin7/logo-remover.git",
+    "type": "git"
   },
   "author": "Roman Tuomisto",
   "license": "MIT",
