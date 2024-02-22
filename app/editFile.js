@@ -1,22 +1,20 @@
 const sharp = require('sharp');
+const sizeOf = require('image-size');
 const fs = require('fs');
 
-async function editFile(inputPath) {
+async function editFile(inputPath, fileName) {
 // Input and output file paths
-const outputPath = './output/BIANCA_NATURAL_1.jpg';
+const outputPath = `./output/${fileName}`;
 
-const imageStats = fs.statSync(inputPath);
-
-const imageWidth = imageStats.width;
-const imageHeight = imageStats.height;
+const { height, width } = sizeOf(inputPath);
 
 const logoWidth = 800;
 const logoHeight = 400;
 
 // Coordinates and dimensions of the area to be removed (logo position)
 const logoArea = {
-  left: imageWidth - logoWidth,
-  top: imageHeight - logoHeight,
+  left: width - logoWidth,
+  top: height - logoHeight,
   width: logoWidth,
   height: logoHeight,
 };

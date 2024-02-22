@@ -14,7 +14,7 @@ async function traverse(inputPath, editFile) {
     const isFile = fs.statSync(fullPath).isFile();
     const isDirectory = fs.statSync(fullPath).isDirectory();
         if(isFile) {
-            return await editFile(fullPath);
+            return await editFile(fullPath, items[item]);
         } else if(isDirectory) {
             traverse(fullPath, editFile);
         } else {

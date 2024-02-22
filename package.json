@@ -13,6 +13,7 @@
   "author": "Roman Tuomisto",
   "license": "MIT",
   "dependencies": {
+    "image-size": "^1.1.1",
     "sharp": "^0.33.2"
   },
   "devDependencies": {
