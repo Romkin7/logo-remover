@@ -1,10 +1,11 @@
 const sharp = require('sharp');
+const fs = require('fs');
 
 async function editFile(inputPath) {
 // Input and output file paths
 const outputPath = './output/BIANCA_NATURAL_1.jpg';
 
-const imageStats = fs.fileSync(inputPath);
+const imageStats = fs.statSync(inputPath);
 
 const imageWidth = imageStats.width;
 const imageHeight = imageStats.height;
@@ -50,6 +51,6 @@ sharp(inputPath)
   });
 }
 
-module.export = editFile;
+module.exports = editFile;
 
   
