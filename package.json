@@ -1,0 +1,17 @@
+{
+  "name": "logo-remover",
+  "version": "1.0.0",
+  "description": "Program, that crops images.",
+  "main": "index.js",
+  "scripts": {
+    "resize": "node index.js"
+  },
+  "author": "Roman Tuomisto",
+  "license": "MIT",
+  "dependencies": {
+    "sharp": "^0.33.2"
+  },
+  "devDependencies": {
+    "prettier": "^3.2.5"
+  }
+}
