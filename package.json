@@ -4,7 +4,8 @@
   "description": "App that remove logo from images",
   "main": "index.js",
   "scripts": {
-    "resize": "node index.js"
+    "start": "node index.js",
+    "remove-logos": "./removeLogos.sh"
   },
   "repository": {
     "url": "git@github.com:Romkin7/logo-remover.git",
@@ -14,6 +15,7 @@
   "license": "MIT",
   "dependencies": {
     "image-size": "^1.1.1",
+    "rimraf": "^5.0.5",
     "sharp": "^0.33.2"
   },
   "devDependencies": {
