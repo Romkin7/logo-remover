@@ -8,8 +8,8 @@ const outputPath = `./output/${fileName}`;
 
 const { height, width } = sizeOf(inputPath);
 
-const logoWidth = (width * 0.28);
-const logoHeight = (height * 0.12);
+const logoWidth = parseInt((width * 0.28), 10);
+const logoHeight =  parseInt((height * 0.12), 10);
 
 // Coordinates and dimensions of the area to be removed (logo position)
 const logoArea = {
