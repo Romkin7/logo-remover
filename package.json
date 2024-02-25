@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "node index.js",
-    "remove-logos": "./removeLogos.sh"
+    "remove-logos": "bash removeLogos.sh"
   },
   "repository": {
     "url": "git@github.com:Romkin7/logo-remover.git",
